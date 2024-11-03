@@ -1,0 +1,45 @@
+/*
+The Garamond fonts are released under the SIL Open Font License. See the files
+in this directory for details.
+*/
+
+
+
+@namespace url('http://www.w3.org/1999/xhtml');
+@namespace m url('http://www.w3.org/1998/Math/MathML');
+
+
+@font-face {
+    font-family: EB Garamond;
+    src: local('./fonts/EBGaramond12-Regular'),
+         url('./fonts/EBGaramond12-Regular.woff2'),
+         url('./fonts/EBGaramond12-Regular.woff');
+}
+@font-face {
+    font-family: EB Garamond;
+    src: local('./fonts/EBGaramond12-Italic'),
+         url('./fonts/EBGaramond12-Italic.woff2'),
+         url('./fonts/EBGaramond12-Italic.woff');
+    font-style: italic;
+	
+}
+@font-face {
+    font-family: Garamond Math;
+    src: local('./fonts/Garamond-Math'),
+         url('./fonts/Garamond-Math.woff2'),
+         url('./fonts/Garamond-Math.woff');
+	
+}
+
+.htmlmathparagraph, m|mtext {
+    font-family: EB Garamond;
+	color:#3B3E3A;
+    font-size:3em;
+
+}
+m|math {
+    font-family: Garamond Math;
+	color:#3B3E3A;
+    font-size:3em;
+}
+
